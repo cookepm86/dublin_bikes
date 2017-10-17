@@ -6,10 +6,13 @@ import datetime
 
 # ------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 filename = 'data_SatSun.json'
 
 # ------------------------------------------------------------------------------
 
+=======
+>>>>>>> 33e343cd20e2230e81c6bd0831a6af62bd6d97e3
 class download_data(object):
     """
     class to download data at periodic time intervals
@@ -83,8 +86,11 @@ class download_data(object):
 dd = download_data('https://api.jcdecaux.com/vls/v1/stations?contract=Dublin',
                      'd2aa5a02f507f8ed4aad52a78772c1496c7cb505', 60*30, 60*60*2)
 dd.run()
+<<<<<<< HEAD
 
 # ------------------------------------------------------------------------------
 
 with open(filename, 'w') as outfile:
     json.dump(dd.data_list, outfile)
+=======
+>>>>>>> 33e343cd20e2230e81c6bd0831a6af62bd6d97e3
